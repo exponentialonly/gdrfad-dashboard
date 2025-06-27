@@ -1,41 +1,8 @@
-{
-  "name": "GDRFAD-kpi-dashboard",
-  "version": "1.0.0",
-  "description": "Dynamic KPI Dashboard for GDRFAD",
-  "main": "index.js",
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "export": "next export"
-  },
-  "dependencies": {
-    "next": "14.0.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "lucide-react": "^0.263.1",
-    "recharts": "^2.8.0",
-    "xlsx": "^0.18.5",
-    "papaparse": "^5.4.1",
-    "lodash": "^4.17.21",
-    "date-fns": "^2.30.0"
-  },
-  "devDependencies": {
-    "tailwindcss": "^3.3.0",
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.24",
-    "eslint": "8.45.0",
-    "eslint-config-next": "13.4.10"
-  },
-  "keywords": [
-    "arabic",
-    "kpi",
-    "dashboard",
-    "rtl",
-    "nextjs",
-    "vercel"
-  ],
-  "author": "Your Name",
-  "license": "MIT"
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  swcMinify: true,
+  output: 'standalone'
 }
+
+module.exports = nextConfig
